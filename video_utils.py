@@ -181,7 +181,7 @@ def get_video_metadata(video_path):
         #     safety_settings=safety_settings,
         #     generation_config=generation_config,
         # )
-        vertexai.init(project='gen-lang-client-0004068608', location="us-west1")
+        vertexai.init(project='your-project-id', location="us-west1")
         video_name = os.path.basename(video_path)
         print("video_name", video_name)
 
@@ -266,7 +266,7 @@ def get_video_metadata(video_path):
 
 def get_video_metadata_long_video(video_path):
     try:
-        vertexai.init(project='gen-lang-client-0004068608', location="us-west1")
+        vertexai.init(project='your-project-id', location="us-west1")
         video_name = os.path.basename(video_path)
         print("video_name", video_name)
 
@@ -383,7 +383,7 @@ from moviepy.editor import VideoFileClip
 
 def describe_video_by_frames(video_path, frame_interval=5):
     try:
-        vertexai.init(project='gen-lang-client-0004068608', location="us-west1")
+        vertexai.init(project='your-project-id', location="us-west1")
 
         model = GenerativeModel(model_name="gemini-1.5-flash")
         # genai.configure(api_key=GEMINI_API_KEY)
@@ -462,7 +462,7 @@ from moviepy.editor import VideoFileClip
 
 def describe_video_by_frames(video_path, frame_interval=5):
     try:
-        vertexai.init(project='gen-lang-client-0004068608', location="us-west1")
+        vertexai.init(project='your-project-id', location="us-west1")
 
         model = GenerativeModel(model_name="gemini-1.5-flash")
         # genai.configure(api_key=GEMINI_API_KEY)
